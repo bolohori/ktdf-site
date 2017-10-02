@@ -28,9 +28,7 @@
 		"WORDPRESS_NONCE_SALT":       { "generator": "secret", "description": "security token generated for WordPress" }
 	},
 	"addons": [
-		"jawsdb",
-		"bucketeer",
-		"sendgrid"
+		"jawsdb"
 	],
 	"image": "heroku/php"
 }
