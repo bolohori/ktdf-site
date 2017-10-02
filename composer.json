@@ -50,6 +50,7 @@
   "scripts": {
     "wordpress-setup-core-install-prompt": "wp core install --prompt",
     "wordpress-setup-core-install": "wp core install --skip-email",
+    "wordpress-setup-post-core-install": "wp option update blogdescription \"The Future Is The Past\" && wp option update timezone_string Europe/Paris",
     "wordpress-setup-clear-home": "wp option delete home || true",
     "wordpress-setup-configure-s3": "echo '{\"domain\":\"path\",\"copy-to-s3\":\"1\",\"serve-from-s3\":\"1\",\"ssl\":\"request\"}' | wp option add tantan_wordpress_s3 --format=json",
     "wordpress-setup-enable-plugins": "wp plugin activate amazon-web-services amazon-s3-and-cloudfront",
@@ -60,6 +61,7 @@
       "@wordpress-setup-finalize"
     ],
     "wordpress-setup-finalize": [
+      "@wordpress-setup-post-core-install"
       "@wordpress-setup-clear-home",
       "@wordpress-setup-configure-s3",
       "@wordpress-setup-enable-plugins",
