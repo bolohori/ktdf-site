@@ -32,7 +32,21 @@
     "wpackagist-plugin/sendgrid-email-delivery-simplified": "^1.7",
     "wp-cli/wp-cli": "^1.1.0",
     "wpackagist-theme/vortex": "^0.2",
-    "cenobitedk/aphasia-theme": "dev-master"
+    "cenobitedk/aphasia-theme": "dev-master",
+    "wpackagist-plugin/add-meta-tags": "^2.11.3",
+    "wpackagist-plugin/akismet": "^4.0",
+    "wpackagist-plugin/clean-and-simple-contact-form-by-meg-nicholas": "^4.6.2",
+    "wpackagist-plugin/custom-link-widget": "^1.1.1",
+    "wpackagist-plugin/custom-recent-posts-widget": "^2.1.1",
+    "wpackagist-plugin/google-analytics-for-wordpress": "^6.2.3",
+    "wpackagist-plugin/image-widget": "^4.4.6",
+    "wpackagist-plugin/paypal-donations": "^1.9.3",
+    "wpackagist-plugin/social-sharing-toolkit": "^2.5",
+    "wpackagist-plugin/ultimate-maintenance-mode": "^1.7.1",
+    "wpackagist-plugin/widget-css-classes": "^1.5.1",
+    "wpackagist-plugin/wordpress-importer": "^0.6.3",
+    "wpackagist-plugin/wp-bandcamp": "^1.1.1",
+    "wpackagist-plugin/wp-db-backup": "^2.3.1"
   },
   "scripts": {
     "wordpress-setup-core-install-prompt": "wp core install --prompt",
