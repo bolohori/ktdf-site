@@ -61,7 +61,7 @@
       "@wordpress-setup-finalize"
     ],
     "wordpress-setup-finalize": [
-      "@wordpress-setup-post-core-install"
+      "@wordpress-setup-post-core-install",
       "@wordpress-setup-clear-home",
       "@wordpress-setup-configure-s3",
       "@wordpress-setup-enable-plugins",
