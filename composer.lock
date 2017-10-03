@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cenobitedk/aphasia-theme.git",
-                "reference": "06970b793ea800609243d8f5d95f82348d4f2c0e"
+                "reference": "871b2870c7802b9d08dcccb32dc065ec031689af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cenobitedk/aphasia-theme/zipball/06970b793ea800609243d8f5d95f82348d4f2c0e",
-                "reference": "06970b793ea800609243d8f5d95f82348d4f2c0e",
+                "url": "https://api.github.com/repos/cenobitedk/aphasia-theme/zipball/871b2870c7802b9d08dcccb32dc065ec031689af",
+                "reference": "871b2870c7802b9d08dcccb32dc065ec031689af",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,7 @@
                 "source": "https://github.com/cenobitedk/aphasia-theme/tree/master",
                 "issues": "https://github.com/cenobitedk/aphasia-theme/issues"
             },
-            "time": "2017-10-02T20:04:24+00:00"
+            "time": "2017-10-03T20:34:11+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -537,16 +537,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.1",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "429be236f296ca249d61c65649cdf2652f4a5e80"
+                "reference": "b80053b620826810b38211b3c5f935ba9cddf6b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/429be236f296ca249d61c65649cdf2652f4a5e80",
-                "reference": "429be236f296ca249d61c65649cdf2652f4a5e80",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/b80053b620826810b38211b3c5f935ba9cddf6b3",
+                "reference": "b80053b620826810b38211b3c5f935ba9cddf6b3",
                 "shasum": ""
             },
             "require": {
@@ -555,7 +555,6 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.1",
                 "json-schema/json-schema-test-suite": "1.2.0",
-                "phpdocumentor/phpdocumentor": "^2.7",
                 "phpunit/phpunit": "^4.8.22"
             },
             "bin": [
@@ -600,7 +599,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2017-05-16T21:06:09+00:00"
+            "time": "2017-10-03T00:49:49+00:00"
         },
         {
             "name": "mustache/mustache",
@@ -2738,16 +2737,16 @@
         },
         {
             "name": "wp-cli/scaffold-command",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/scaffold-command.git",
-                "reference": "9ed0d96967a84ebe21764aa30b162717bc45c6ef"
+                "reference": "2483ee1a062f3fe78acf6ee3f53a77d686b5ac61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/scaffold-command/zipball/9ed0d96967a84ebe21764aa30b162717bc45c6ef",
-                "reference": "9ed0d96967a84ebe21764aa30b162717bc45c6ef",
+                "url": "https://api.github.com/repos/wp-cli/scaffold-command/zipball/2483ee1a062f3fe78acf6ee3f53a77d686b5ac61",
+                "reference": "2483ee1a062f3fe78acf6ee3f53a77d686b5ac61",
                 "shasum": ""
             },
             "require-dev": {
@@ -2792,7 +2791,7 @@
             ],
             "description": "Generate code for post types, taxonomies, plugins, child themes, etc.",
             "homepage": "https://github.com/wp-cli/scaffold-command",
-            "time": "2017-08-23T13:06:41+00:00"
+            "time": "2017-10-03T12:53:14+00:00"
         },
         {
             "name": "wp-cli/search-replace-command",
