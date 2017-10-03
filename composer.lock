@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cenobitedk/aphasia-theme.git",
-                "reference": "871b2870c7802b9d08dcccb32dc065ec031689af"
+                "reference": "be79abbcd0cca4a1f54347db65b0718a7f19696f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cenobitedk/aphasia-theme/zipball/871b2870c7802b9d08dcccb32dc065ec031689af",
-                "reference": "871b2870c7802b9d08dcccb32dc065ec031689af",
+                "url": "https://api.github.com/repos/cenobitedk/aphasia-theme/zipball/be79abbcd0cca4a1f54347db65b0718a7f19696f",
+                "reference": "be79abbcd0cca4a1f54347db65b0718a7f19696f",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,7 @@
                 "source": "https://github.com/cenobitedk/aphasia-theme/tree/master",
                 "issues": "https://github.com/cenobitedk/aphasia-theme/issues"
             },
-            "time": "2017-10-03T20:34:11+00:00"
+            "time": "2017-10-03T20:44:14+00:00"
         },
         {
             "name": "composer/ca-bundle",
