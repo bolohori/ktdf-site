@@ -1,5 +1,41 @@
 This repo is a clone of [David Zuelkes Wordpress/Heroku repo](https://github.com/dzuelke/wordpress-12factor) and contains configuration changes for the Aphasia website.
 
+Furthermore this repo follows some of the same changes as in [muenzpraeger/blog-wordpress-heroku](https://github.com/muenzpraeger/blog-wordpress-heroku).
+
+
+### Changes
+
+There are the main changes in this repo compared to the original one:
+
+* Removed the [Bucketeer addon](https://elements.heroku.com/addons/bucketeer).
+* Removed the [Sendgrid addon](https://elements.heroku.com/addons/sendgrid).
+* Replaced the Twelve-Factor theme with [custom theme](https://github.com/cenobitedk/aphasia-theme).
+* Changed/added some Wordpress addons.
+* Disabled forced SSL for admin and login.
+
+
+### First deploy:
+
+* Create app and add JawsDB in the Heroku dashboard, or use the CLI:  
+  `$ heroku create`  
+  `$ heroku addons:create jawsdb`
+* Set WordPress Keys and Salts:  
+  `$ heroku config:set $(curl 'https://api.wordpress.org/secret-key/1.1/salt/' | sed -E -e "s/^define\('(.+)', *'(.+)'\);$/WORDPRESS_\1=\2/" -e 's/ //g') --app [app_name]`
+* Add environment vars:  
+  `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `S3_BUCKET`, `WORDPRESS_URL`,
+  `WORDPRESS_ADMIN_USER`, `WORDPRESS_ADMIN_EMAIL` and `WORDPRESS_ADMIN_PASSWORD`.
+* Deploy to Heroku.  
+  `heroku git:remote -a [app_name]` *– if needed*  
+  `git push heroku master`  
+* Run wordpress install and configuration.  
+  `$ heroku run 'composer run-script wordpress-manual-setup' --app [app_name]`
+
+Read the original and extensive documentation (kudos to David!) below when you want to apply changes.
+
+
+___
+___
+___
 
 
 # Twelve-Factor WordPress
