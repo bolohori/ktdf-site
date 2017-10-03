@@ -48,6 +48,7 @@
     "wpackagist-plugin/wp-db-backup": "^2.3.1"
   },
   "scripts": {
+    "post-install-cmd": "echo \"post-install-cmd\"",
     "wordpress-setup-core-install-prompt": "wp core install --prompt",
     "wordpress-setup-core-install": "wp core install --skip-email",
     "wordpress-setup-post-core-install": "wp option update blogdescription \"The Future Is The Past\" && wp option update timezone_string Europe/Paris",
