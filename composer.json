@@ -33,7 +33,6 @@
     "wpackagist-theme/vortex": "^0.2",
     "cenobitedk/aphasia-theme": "dev-master",
     "wpackagist-plugin/add-meta-tags": "^2.11.3",
-    "wpackagist-plugin/akismet": "^4.0",
     "wpackagist-plugin/clean-and-simple-contact-form-by-meg-nicholas": "^4.6.2",
     "wpackagist-plugin/custom-link-widget": "^1.1.1",
     "wpackagist-plugin/custom-recent-posts-widget": "^2.1.1",
@@ -45,7 +44,8 @@
     "wpackagist-plugin/widget-css-classes": "^1.5.1",
     "wpackagist-plugin/wordpress-importer": "^0.6.3",
     "wpackagist-plugin/wp-bandcamp": "^1.1.1",
-    "wpackagist-plugin/wp-db-backup": "^2.3.1"
+    "wpackagist-plugin/wp-db-backup": "^2.3.1",
+    "wpackagist-plugin/wp-spamshield": "^1.9.17"
   },
   "scripts": {
     "post-install-cmd": "",
@@ -55,7 +55,7 @@
     "wordpress-setup-clear-home": "wp option delete home || true",
     "wordpress-setup-configure-s3": "echo '{\"domain\":\"path\",\"copy-to-s3\":\"1\",\"serve-from-s3\":\"1\",\"ssl\":\"request\"}' | wp option add tantan_wordpress_s3 --format=json",
     "wordpress-setup-enable-plugins": "wp plugin activate amazon-web-services amazon-s3-and-cloudfront",
-    "wordpress-setup-enable-custom-plugins": "wp plugin activate add-meta-tags akismet clean-and-simple-contact-form-by-meg-nicholas custom-link-widget custom-recent-posts-widget google-analytics-for-wordpress image-widget paypal-donations social-sharing-toolkit ultimate-maintenance-mode widget-css-classes wordpress-importer wp-bandcamp wp-db-backup",
+    "wordpress-setup-enable-custom-plugins": "wp plugin activate add-meta-tags clean-and-simple-contact-form-by-meg-nicholas custom-link-widget custom-recent-posts-widget google-analytics-for-wordpress image-widget paypal-donations social-sharing-toolkit ultimate-maintenance-mode widget-css-classes wordpress-importer wp-bandcamp wp-db-backup wp-spamshield",
     "wordpress-setup-permalink-structure": "wp rewrite structure '/%year%/%monthnum%/%day%/%postname%/' || true",
     "wordpress-setup": [
       "@wordpress-setup-core-install-prompt",

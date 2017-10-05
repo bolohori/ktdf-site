@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "864ee1a49fb587800d21eaa5756cf3cc",
+    "content-hash": "a95496a7086334fb221d2e9f0477474d",
     "packages": [
         {
             "name": "cenobitedk/aphasia-theme",
@@ -537,16 +537,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.2",
+            "version": "5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "b80053b620826810b38211b3c5f935ba9cddf6b3"
+                "reference": "7ccb0e67ea8ace0f84c40900ca3c8a234467628c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/b80053b620826810b38211b3c5f935ba9cddf6b3",
-                "reference": "b80053b620826810b38211b3c5f935ba9cddf6b3",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/7ccb0e67ea8ace0f84c40900ca3c8a234467628c",
+                "reference": "7ccb0e67ea8ace0f84c40900ca3c8a234467628c",
                 "shasum": ""
             },
             "require": {
@@ -599,7 +599,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2017-10-03T00:49:49+00:00"
+            "time": "2017-10-04T20:57:36+00:00"
         },
         {
             "name": "mustache/mustache",
@@ -3183,26 +3183,6 @@
             "homepage": "https://wordpress.org/plugins/add-meta-tags/"
         },
         {
-            "name": "wpackagist-plugin/akismet",
-            "version": "4.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/4.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.4.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/akismet/"
-        },
-        {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
             "version": "1.2",
             "source": {
@@ -3483,6 +3463,26 @@
             "homepage": "https://wordpress.org/plugins/wp-db-backup/"
         },
         {
+            "name": "wpackagist-plugin/wp-spamshield",
+            "version": "1.9.17",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-spamshield/",
+                "reference": "tags/1.9.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-spamshield.1.9.17.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-spamshield/"
+        },
+        {
             "name": "wpackagist-theme/vortex",
             "version": "0.2",
             "source": {
@@ -3506,16 +3506,16 @@
     "packages-dev": [
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v124",
+            "version": "v125",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "ae364349c513e569d7d4614ab3b1767eb883b858"
+                "reference": "880d625f715680aca2969562b8a5a69f4a289b7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/ae364349c513e569d7d4614ab3b1767eb883b858",
-                "reference": "ae364349c513e569d7d4614ab3b1767eb883b858",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/880d625f715680aca2969562b8a5a69f4a289b7f",
+                "reference": "880d625f715680aca2969562b8a5a69f4a289b7f",
                 "shasum": ""
             },
             "bin": [
@@ -3546,7 +3546,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2017-09-07T23:07:36+00:00"
+            "time": "2017-10-04T22:42:04+00:00"
         }
     ],
     "aliases": [],
