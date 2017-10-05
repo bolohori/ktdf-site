@@ -5,7 +5,7 @@ Furthermore this repo follows some of the same changes as in [muenzpraeger/blog-
 
 ### Changes
 
-There are the main changes in this repo compared to the original one:
+These are the main changes in this repo compared to the original one:
 
 * Removed the [Bucketeer addon](https://elements.heroku.com/addons/bucketeer).
 * Removed the [Sendgrid addon](https://elements.heroku.com/addons/sendgrid).
@@ -25,8 +25,8 @@ There are the main changes in this repo compared to the original one:
   `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `S3_BUCKET`, `WORDPRESS_URL`,
   `WORDPRESS_ADMIN_USER`, `WORDPRESS_ADMIN_EMAIL` and `WORDPRESS_ADMIN_PASSWORD`.
 * Deploy to Heroku.  
-  `heroku git:remote -a [app_name]` *– if needed*  
-  `git push heroku master`  
+  `$ heroku git:remote -a [app_name]` *– if needed*  
+  `$ git push heroku master`  
 * Run wordpress install and configuration.  
   `$ heroku run 'composer run-script wordpress-manual-setup' --app [app_name]`
 
