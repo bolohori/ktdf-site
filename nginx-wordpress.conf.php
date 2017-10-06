@@ -28,10 +28,7 @@ location ~* /(?:uploads|files)/.*\.php$ {
 }
 
 location /wp-content/ {
-	root "<?=getenv("HEROKU_APP_DIR")?>";
-}
-
-location / {
+	root              "<?=getenv("HEROKU_APP_DIR")?>";
   gzip              on;
   gzip_vary         on;
   gzip_proxied      any;
