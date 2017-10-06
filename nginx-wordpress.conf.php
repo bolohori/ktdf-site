@@ -27,8 +27,7 @@ location ~* /(?:uploads|files)/.*\.php$ {
 	deny all;
 }
 
-location /wp-content/ {
-	root              "<?=getenv("HEROKU_APP_DIR")?>";
+location / {
   gzip              on;
   gzip_vary         on;
   gzip_proxied      any;
@@ -50,6 +49,10 @@ location /wp-content/ {
                     application/x-font-ttf
                     image/svg+xml
                     ;
+}
+
+location /wp-content/ {
+	root "<?=getenv("HEROKU_APP_DIR")?>";
 }
 
 # WordPress single site rules.
