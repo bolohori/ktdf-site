@@ -31,6 +31,30 @@ location /wp-content/ {
 	root "<?=getenv("HEROKU_APP_DIR")?>";
 }
 
+location / {
+  gzip              on;
+  gzip_vary         on;
+  gzip_proxied      any;
+  gzip_min_length   1k;
+  gzip_buffers      16 8k;
+  gzip_http_version 1.1;
+  gzip_comp_level   9;
+  gzip_types        text/plain
+                    text/javascript
+                    text/css
+                    text/xml
+                    application/json
+                    application/javascript
+                    application/atom+xml
+                    application/rss+xml
+                    application/x-javascript
+                    application/xml
+                    application/xhtml+xml
+                    application/x-font-ttf
+                    image/svg+xml
+                    ;
+}
+
 # WordPress single site rules.
 # Designed to be included in any server {} block.
 
