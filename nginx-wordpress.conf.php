@@ -27,7 +27,17 @@ location ~* /(?:uploads|files)/.*\.php$ {
 	deny all;
 }
 
+location /wp-content/ {
+	root "<?=getenv("HEROKU_APP_DIR")?>";
+}
+
+# WordPress single site rules.
+# Designed to be included in any server {} block.
+
+# This order might seem weird - this is attempted to match last if rules below fail.
+# http://wiki.nginx.org/HttpCoreModule
 location / {
+	try_files $uri $uri/ /index.php?$args;
   gzip              on;
   gzip_vary         on;
   gzip_proxied      any;
@@ -49,19 +59,6 @@ location / {
                     application/x-font-ttf
                     image/svg+xml
                     ;
-}
-
-location /wp-content/ {
-	root "<?=getenv("HEROKU_APP_DIR")?>";
-}
-
-# WordPress single site rules.
-# Designed to be included in any server {} block.
-
-# This order might seem weird - this is attempted to match last if rules below fail.
-# http://wiki.nginx.org/HttpCoreModule
-location / {
-	try_files $uri $uri/ /index.php?$args;
 }
 
 # Add trailing slash to */wp-admin requests.
