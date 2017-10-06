@@ -44,20 +44,21 @@ location / {
   gzip_buffers      16 8k;
   gzip_http_version 1.1;
   gzip_comp_level   9;
-  gzip_types        text/plain
-                    text/javascript
-                    text/css
-                    text/xml
-                    application/json
-                    application/javascript
-                    application/atom+xml
-                    application/rss+xml
-                    application/x-javascript
-                    application/xml
-                    application/xhtml+xml
-                    application/x-font-ttf
-                    image/svg+xml
-                    ;
+  gzip_types        text/css;
+  # gzip_types        text/plain
+  #                   text/javascript
+  #                   text/css
+  #                   text/xml
+  #                   application/json
+  #                   application/javascript
+  #                   application/atom+xml
+  #                   application/rss+xml
+  #                   application/x-javascript
+  #                   application/xml
+  #                   application/xhtml+xml
+  #                   application/x-font-ttf
+  #                   image/svg+xml
+  #                   ;
 	try_files $uri $uri/ /index.php?$args;
 }
 
