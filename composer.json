@@ -56,7 +56,7 @@
     "wordpress-setup-clear-home": "wp option delete home || true",
     "wordpress-setup-configure-s3": "echo '{\"domain\":\"path\",\"copy-to-s3\":\"1\",\"serve-from-s3\":\"1\",\"ssl\":\"request\"}' | wp option add tantan_wordpress_s3 --format=json",
     "wordpress-setup-enable-plugins": "wp plugin activate amazon-web-services amazon-s3-and-cloudfront",
-    "wordpress-setup-enable-custom-plugins": "wp plugin activate add-meta-tags clean-and-simple-contact-form-by-meg-nicholas custom-link-widget custom-recent-posts-widget google-analytics-for-wordpress image-widget paypal-donations social-sharing-toolkit ultimate-maintenance-mode widget-css-classes wordpress-importer wp-bandcamp wp-db-backup wp-spamshield",
+    "wordpress-setup-enable-custom-plugins": "wp plugin activate add-meta-tags clean-and-simple-contact-form-by-meg-nicholas custom-link-widget custom-recent-posts-widget google-analytics-for-wordpress image-widget paypal-donations social-sharing-toolkit ultimate-maintenance-mode widget-css-classes wordpress-importer wp-bandcamp wp-db-backup wp-smushit wp-spamshield",
     "wordpress-setup-permalink-structure": "wp rewrite structure '/%year%/%monthnum%/%day%/%postname%/' || true",
     "wordpress-setup": [
       "@wordpress-setup-core-install-prompt",
