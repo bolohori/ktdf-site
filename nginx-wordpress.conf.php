@@ -48,6 +48,11 @@ location ~* /(?:uploads|files)/.*\.php$ {
 	deny all;
 }
 
+#browser caching of static assets
+location ~*  \.(jpg|jpeg|png|gif|ico|css|js)$ {
+  expires 7d;
+}
+
 location /wp-content/ {
 	root "<?=getenv("HEROKU_APP_DIR")?>";
 }
