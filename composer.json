@@ -13,7 +13,7 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/cenobitedk/aphasia-theme"
+      "url": "https://github.com/cenobitedk/ktdf-theme"
     }
   ],
   "extra": {
@@ -30,40 +30,32 @@
     "wpackagist-plugin/amazon-web-services": "^1.0.3",
     "wpackagist-plugin/amazon-s3-and-cloudfront": "^1.2",
     "wp-cli/wp-cli": "^1.3.0",
-    "wpackagist-theme/vortex": "^0.2",
-    "cenobitedk/aphasia-theme": "dev-master",
+    "cenobitedk/ktdf-theme": "dev-master",
     "wpackagist-plugin/add-meta-tags": "^2.11.3",
-    "wpackagist-plugin/clean-and-simple-contact-form-by-meg-nicholas": "^4.6.2",
-    "wpackagist-plugin/custom-link-widget": "^1.1.1",
-    "wpackagist-plugin/custom-recent-posts-widget": "^2.1.1",
-    "wpackagist-plugin/google-analytics-for-wordpress": "^6.2.3",
     "wpackagist-plugin/image-widget": "^4.4.6",
+    "wpackagist-plugin/gigpress": "^2.3.19",
     "wpackagist-plugin/paypal-donations": "^1.9.3",
     "wpackagist-plugin/social-sharing-toolkit": "^2.5",
     "wpackagist-plugin/ultimate-maintenance-mode": "^1.7.1",
     "wpackagist-plugin/widget-css-classes": "^1.5.1",
-    "wpackagist-plugin/wordpress-importer": "^0.6.3",
-    "wpackagist-plugin/wp-bandcamp": "^1.1.1",
-    "wpackagist-plugin/wp-db-backup": "^2.3.1",
-    "wpackagist-plugin/wp-smushit": "^2.7.6",
-    "wpackagist-plugin/wp-spamshield": "^1.9.17"
+    "wpackagist-plugin/wordpress-importer": "^0.6.3"
   },
   "scripts": {
     "post-install-cmd": "",
     "wordpress-setup-core-install-prompt": "wp core install --prompt",
     "wordpress-setup-core-install": "wp core install --skip-email",
-    "wordpress-setup-post-core-install": "wp option update blogdescription \"The Future Is The Past\" && wp option update timezone_string Europe/Paris",
+    "wordpress-setup-post-core-install": "wp option update blogdescription \"Killtown Death Fest\" && wp option update timezone_string Europe/Paris",
     "wordpress-setup-clear-home": "wp option delete home || true",
     "wordpress-setup-configure-s3": "echo '{\"domain\":\"path\",\"copy-to-s3\":\"1\",\"serve-from-s3\":\"1\",\"ssl\":\"request\"}' | wp option add tantan_wordpress_s3 --format=json",
     "wordpress-setup-enable-plugins": "wp plugin activate amazon-web-services amazon-s3-and-cloudfront",
-    "wordpress-setup-enable-custom-plugins": "wp plugin activate add-meta-tags clean-and-simple-contact-form-by-meg-nicholas custom-link-widget custom-recent-posts-widget google-analytics-for-wordpress image-widget paypal-donations social-sharing-toolkit ultimate-maintenance-mode widget-css-classes wordpress-importer wp-bandcamp wp-db-backup wp-smushit wp-spamshield",
+    "wordpress-setup-enable-custom-plugins": "wp plugin activate add-meta-tags image-widget gigpress paypal-donations social-sharing-toolkit ultimate-maintenance-mode widget-css-classes wordpress-importer",
     "wordpress-setup-permalink-structure": "wp rewrite structure '/%year%/%monthnum%/%day%/%postname%/' || true",
     "wordpress-setup": [
       "@wordpress-setup-core-install-prompt",
       "@wordpress-setup-finalize"
     ],
     "wordpress-manual-setup": [
-      "wp core install --title='Aphasia Records' --admin_user=\"$WORDPRESS_ADMIN_USER\" --admin_password=\"$WORDPRESS_ADMIN_PASSWORD\" --admin_email=\"$WORDPRESS_ADMIN_EMAIL\" --url=\"$WORDPRESS_URL\"",
+      "wp core install --title='Killtown Death Fest' --admin_user=\"$WORDPRESS_ADMIN_USER\" --admin_password=\"$WORDPRESS_ADMIN_PASSWORD\" --admin_email=\"$WORDPRESS_ADMIN_EMAIL\" --url=\"$WORDPRESS_URL\"",
       "@wordpress-setup-finalize",
       "@wordpress-setup-theme"
     ],
@@ -75,7 +67,7 @@
       "@wordpress-setup-enable-custom-plugins",
       "@wordpress-setup-permalink-structure"
     ],
-    "wordpress-setup-theme": "wp theme activate aphasia-theme",
+    "wordpress-setup-theme": "wp theme activate ktdf-theme",
     "wordpress-setup-welcome-post": [
       "echo 'It works! Please see <a href=\"https://github.com/dzuelke/wordpress-12factor\">wordpress-12factor on GitHub</a> for info and post-install instructions.' | wp post update 1 - --post_title=\"Welcome to WordPress on Heroku\""
     ]

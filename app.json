@@ -1,5 +1,5 @@
 {
-	"name": "Aphasia WordPress",
+	"name": "KTDF WordPress",
 	"description": "WordPress, fully managed using Composer and configured using environment variables.",
 	"keywords": [
 		"php",
@@ -7,12 +7,12 @@
 		"blog",
 		"cms"
 	],
-	"website": "www.aphasia-records.com",
-	"repository": "https://github.com/cenobitedk/aphasia-site",
+	"website": "www.killtowndeathfest.com",
+	"repository": "https://github.com/cenobitedk/ktdf-site",
 	"logo": "https://s.w.org/about/images/logos/wordpress-logo-notext-rgb.png",
 	"success_url": "/",
 	"scripts": {
-		"postdeploy": "composer wordpress-setup-core-install -- --title='Aphasia Records' --admin_user=\"$WORDPRESS_ADMIN_USER\" --admin_password=\"$WORDPRESS_ADMIN_PASSWORD\" --admin_email=\"$WORDPRESS_ADMIN_EMAIL\" --url='$WORDPRESS_URL' && composer wordpress-setup-finalize && composer wordpress-setup-theme"
+		"postdeploy": "composer wordpress-setup-core-install -- --title='Killtown Death Fest' --admin_user=\"$WORDPRESS_ADMIN_USER\" --admin_password=\"$WORDPRESS_ADMIN_PASSWORD\" --admin_email=\"$WORDPRESS_ADMIN_EMAIL\" --url='$WORDPRESS_URL' && composer wordpress-setup-finalize && composer wordpress-setup-theme"
 	},
 	"env": {
     "WORDPRESS_URL":              { "description": "WordPress URL" },
