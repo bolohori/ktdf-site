@@ -1,4 +1,4 @@
-index index.php;
+index index.html index.php;
 
 gzip              on;
 gzip_vary         on;
