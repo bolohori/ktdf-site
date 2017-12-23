@@ -1,6 +1,10 @@
 body {
   background-color: black;
-  background-image: url(../img/bg.jpg);
+  background-image: url('../img/bg.jpg');
+  background-image: -webkit-image-set(
+      url('../img/bg-low.jpg') 1x,
+      url('../img/bg.jpg') 2x
+  );
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
