@@ -1,22 +1,46 @@
 body {
   background-color: black;
-  background-image: url('../img/bg.jpg');
-  background-image: -webkit-image-set(
-      url('../img/bg-low.jpg') 1x,
-      url('../img/bg.jpg') 2x
-  );
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
 
-.logo {
+@media (min-width: 770px) {
+  body {
+    background-image: url('../img/bg.jpg');
+    background-image: -webkit-image-set(
+        url('../img/bg-low.jpg') 1x,
+        url('../img/bg.jpg') 2x
+    );
+  }
+}
+
+.logo, .poster {
   text-align: center;
-  margin: 10vh auto;
+  margin: 0 auto 10vh;
+}
+
+@media (min-width: 770px) {
+  .logo, .poster {
+    margin: 5vh auto;
+  }
 }
 
 .logo img {
   height: auto;
   width: 80%;
   max-width: 1200px;
+}
+.poster img {
+  height: auto;
+  width: 100vw;
+  transition: all .1s;
+}
+
+@media (min-width: 770px) {
+  .poster img {
+    height: 90vh;
+    width: auto;
+    max-width: 1200px;
+  }
 }

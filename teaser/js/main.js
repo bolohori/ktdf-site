@@ -1,1 +1,1 @@
-
+var myLazyLoad = new LazyLoad();
