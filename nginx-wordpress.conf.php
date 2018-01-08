@@ -84,7 +84,7 @@ rewrite /wp-admin$ $scheme://$host$uri/ permanent;
 location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
   expires 7d;
   add_header Pragma public;
-  add_header Cache-Control "public";
+  add_header Cache-Control public;
 }
 
 #location ~* \.(?:mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
