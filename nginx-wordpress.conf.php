@@ -50,14 +50,6 @@ location ~* /(?:uploads|files)/.*\.php$ {
 	deny all;
 }
 
-location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
-  expires 7d;
-  add_header Pragma public;
-  add_header Cache-Control public;
-}
-
-
-
 location /wp-content/ {
 	root "<?=getenv("HEROKU_APP_DIR")?>";
 }
