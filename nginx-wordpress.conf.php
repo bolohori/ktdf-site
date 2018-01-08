@@ -1,4 +1,4 @@
-index index.html index.php;
+index             index.html index.php;
 
 gzip              on;
 gzip_vary         on;
@@ -11,6 +11,7 @@ gzip_types        text/plain
                   text/javascript
                   text/css
                   text/xml
+                  image/jpeg
                   application/json
                   application/javascript
                   application/atom+xml
@@ -84,7 +85,6 @@ location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
   expires 7d;
   add_header Pragma public;
   add_header Cache-Control "public";
-  try_files $uri =404;
 }
 
 #location ~* \.(?:mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
