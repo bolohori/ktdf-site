@@ -23,13 +23,6 @@ gzip_types        text/plain
                   ;
 
 
-# Directives to send expires headers and turn off 404 error logging.
-#location ~* ^.+\.(ogg|ogv|svg|svgz|eot|otf|woff|mp4|ttf|rss|atom|jpg|jpeg|gif|png|ico|zip|tgz|gz|rar|bz2|doc|xls|exe|ppt|tar|mid|midi|wav|bmp|rtf)$ {
-#  access_log off;
-#  log_not_found off;
-#  expires 30d;
-#}
-
 # Global restrictions configuration file.
 # Designed to be included in any server {} block.
 location = /favicon.ico {
@@ -59,6 +52,36 @@ location ~* /(?:uploads|files)/.*\.php$ {
 location /wp-content/ {
 	root "<?=getenv("HEROKU_APP_DIR")?>";
 }
+
+# Directives to send expires headers and turn off 404 error logging.
+#location ~* ^.+\.(ogg|ogv|svg|svgz|eot|otf|woff|mp4|ttf|rss|atom|jpg|jpeg|gif|png|ico|zip|tgz|gz|rar|bz2|doc|xls|exe|ppt|tar|mid|midi|wav|bmp|rtf)$ {
+#  access_log off;
+#  log_not_found off;
+#  expires 30d;
+#}
+
+location ~* \.(eot|oft|ttf|woff2?)$ {
+  add_header Access-Control-Allow-Origin *;
+  expires max;
+  log_not_found off;
+  access_log off;
+  add_header Cache-Control public;
+}
+
+location ~* \.(jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
+  expires 7d;
+  access_log off;
+  log_not_found off;
+  add_header Cache-Control public;
+}
+
+location ~* \.(mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
+  expires 30d;
+  access_log off;
+  log_not_found off;
+  add_header Cache-Control public;
+}
+
 
 # WordPress single site rules.
 # Designed to be included in any server {} block.
