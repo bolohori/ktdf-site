@@ -60,7 +60,7 @@ location /wp-content/ {
 #  expires 30d;
 #}
 
-location ~* \.(eot|oft|ttf|woff2?)$ {
+location ~* \.(?:eot|oft|ttf|woff2?)$ {
   add_header Access-Control-Allow-Origin *;
   expires max;
   log_not_found off;
@@ -68,14 +68,14 @@ location ~* \.(eot|oft|ttf|woff2?)$ {
   add_header Cache-Control public;
 }
 
-location ~* \.(jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
+location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
   expires 7d;
   access_log off;
   log_not_found off;
   add_header Cache-Control public;
 }
 
-location ~* \.(mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
+location ~* \.(?:mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
   expires 30d;
   access_log off;
   log_not_found off;
