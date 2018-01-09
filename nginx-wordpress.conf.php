@@ -82,7 +82,7 @@ location ~* \.(?:eot|oft|ttf|woff2?)$ {
   log_not_found off;
 }
 
-location ~* \.(?:css|js)(\?ver=[0-9\.])?$ {
+location ~* \.(?:css|js)(\?ver=[0-9\.]+)?$ {
   root "<?=getenv("HEROKU_APP_DIR")?>";
   add_header Cache-Control public;
   expires 7d;
