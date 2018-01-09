@@ -82,10 +82,18 @@ location ~* \.(?:eot|oft|ttf|woff2?)$ {
   log_not_found off;
 }
 
+location ~* \.(?:css|js)(\?ver=[0-9\.])?$ {
+  root "<?=getenv("HEROKU_APP_DIR")?>";
+  add_header Cache-Control public;
+  expires 7d;
+  access_log off;
+  log_not_found off;
+}
+
 location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
   root "<?=getenv("HEROKU_APP_DIR")?>";
   add_header Cache-Control public;
-  expires 14d;
+  expires 30d;
   access_log off;
   log_not_found off;
 }
@@ -93,7 +101,7 @@ location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
 location ~* \.(?:mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
   root "<?=getenv("HEROKU_APP_DIR")?>";
   add_header Cache-Control public;
-  expires 30d;
+  expires 90d;
   access_log off;
   log_not_found off;
 }
