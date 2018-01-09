@@ -73,23 +73,27 @@ rewrite /wp-admin$ $scheme://$host$uri/ permanent;
 #  expires 30d;
 #}
 
-#location ~* \.(?:eot|oft|ttf|woff2?)$ {
-#  add_header Access-Control-Allow-Origin *;
-#  expires max;
-#  log_not_found off;
-#  access_log off;
-#  add_header Cache-Control public;
-#}
-
-location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
-	root "<?=getenv("HEROKU_APP_DIR")?>";
-  expires 14d;
-  add_header Cache-Control "public";
+location ~* \.(?:eot|oft|ttf|woff2?)$ {
+  root "<?=getenv("HEROKU_APP_DIR")?>";
+  add_header Access-Control-Allow-Origin *;
+  add_header Cache-Control public;
+  expires max;
+  access_log off;
+  log_not_found off;
 }
 
-#location ~* \.(?:mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
-#  expires 30d;
-#  access_log off;
-#  log_not_found off;
-#  add_header Cache-Control public;
-#}
+location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
+  root "<?=getenv("HEROKU_APP_DIR")?>";
+  add_header Cache-Control public;
+  expires 14d;
+  access_log off;
+  log_not_found off;
+}
+
+location ~* \.(?:mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
+  root "<?=getenv("HEROKU_APP_DIR")?>";
+  add_header Cache-Control public;
+  expires 30d;
+  access_log off;
+  log_not_found off;
+}
