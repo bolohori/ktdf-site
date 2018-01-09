@@ -51,7 +51,7 @@ location ~* /(?:uploads|files)/.*\.php$ {
 }
 
 location /wp-content/ {
-	alias "<?=getenv("HEROKU_APP_DIR")?>";
+	root "<?=getenv("HEROKU_APP_DIR")?>";
 }
 
 # Directives to send expires headers and turn off 404 error logging.
