@@ -82,6 +82,7 @@ rewrite /wp-admin$ $scheme://$host$uri/ permanent;
 #}
 
 location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
+	root "<?=getenv("HEROKU_APP_DIR")?>";
   expires 14d;
   add_header Cache-Control "public";
 }
