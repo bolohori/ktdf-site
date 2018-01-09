@@ -54,6 +54,10 @@ location /wp-content/ {
 	root "<?=getenv("HEROKU_APP_DIR")?>";
 }
 
+location /teaser/ {
+	root "<?=getenv("HEROKU_APP_DIR")?>";
+}
+
 # WordPress single site rules.
 # Designed to be included in any server {} block.
 
