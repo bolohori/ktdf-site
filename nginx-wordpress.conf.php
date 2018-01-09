@@ -50,9 +50,9 @@ location ~* /(?:uploads|files)/.*\.php$ {
 	deny all;
 }
 
-# location /wp-content/ {
-# 	alias "<?=getenv("HEROKU_APP_DIR")?>";
-# }
+location /wp-content/ {
+	alias "<?=getenv("HEROKU_APP_DIR")?>";
+}
 
 # Directives to send expires headers and turn off 404 error logging.
 #location ~* ^.+\.(ogg|ogv|svg|svgz|eot|otf|woff|mp4|ttf|rss|atom|jpg|jpeg|gif|png|ico|zip|tgz|gz|rar|bz2|doc|xls|exe|ppt|tar|mid|midi|wav|bmp|rtf)$ {
@@ -61,53 +61,37 @@ location ~* /(?:uploads|files)/.*\.php$ {
 #  expires 30d;
 #}
 
-location ~* \.(?:eot|oft|ttf|woff2?)$ {
-  # root "<?=getenv("HEROKU_APP_DIR")?>";
-  add_header Access-Control-Allow-Origin *;
-  add_header Cache-Control public;
-  expires max;
-  access_log off;
-  log_not_found off;
-
-  location /wp-content/ {
-  	alias "<?=getenv("HEROKU_APP_DIR")?>";
-  }
-}
-
-location ~* \.(?:css|js)$ {
-  add_header Cache-Control public;
-  expires 7d;
-  access_log off;
-  log_not_found off;
-
-  location /wp-content/ {
-  	alias "<?=getenv("HEROKU_APP_DIR")?>";
-  }
-}
-
-location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
-  # root "<?=getenv("HEROKU_APP_DIR")?>";
-  add_header Cache-Control public;
-  expires 30d;
-  access_log off;
-  log_not_found off;
-
-  location /wp-content/ {
-  	alias "<?=getenv("HEROKU_APP_DIR")?>";
-  }
-}
-
-location ~* \.(?:mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
-  # root "<?=getenv("HEROKU_APP_DIR")?>";
-  add_header Cache-Control public;
-  expires 90d;
-  access_log off;
-  log_not_found off;
-
-  location /wp-content/ {
-  	alias "<?=getenv("HEROKU_APP_DIR")?>";
-  }
-}
+# location ~* \.(?:eot|oft|ttf|woff2?)$ {
+#   # root "<?=getenv("HEROKU_APP_DIR")?>";
+#   add_header Access-Control-Allow-Origin *;
+#   add_header Cache-Control public;
+#   expires max;
+#   access_log off;
+#   log_not_found off;
+# }
+#
+# location ~* \.(?:css|js)$ {
+#   add_header Cache-Control public;
+#   expires 7d;
+#   access_log off;
+#   log_not_found off;
+# }
+#
+# location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
+#   # root "<?=getenv("HEROKU_APP_DIR")?>";
+#   add_header Cache-Control public;
+#   expires 30d;
+#   access_log off;
+#   log_not_found off;
+# }
+#
+# location ~* \.(?:mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
+#   # root "<?=getenv("HEROKU_APP_DIR")?>";
+#   add_header Cache-Control public;
+#   expires 90d;
+#   access_log off;
+#   log_not_found off;
+# }
 
 # WordPress single site rules.
 # Designed to be included in any server {} block.
