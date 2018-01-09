@@ -50,9 +50,9 @@ location ~* /(?:uploads|files)/.*\.php$ {
 	deny all;
 }
 
-location /wp-content/ {
-	alias "<?=getenv("HEROKU_APP_DIR")?>";
-}
+# location /wp-content/ {
+# 	alias "<?=getenv("HEROKU_APP_DIR")?>";
+# }
 
 # Directives to send expires headers and turn off 404 error logging.
 #location ~* ^.+\.(ogg|ogv|svg|svgz|eot|otf|woff|mp4|ttf|rss|atom|jpg|jpeg|gif|png|ico|zip|tgz|gz|rar|bz2|doc|xls|exe|ppt|tar|mid|midi|wav|bmp|rtf)$ {
@@ -68,6 +68,10 @@ location ~* \.(?:eot|oft|ttf|woff2?)$ {
   expires max;
   access_log off;
   log_not_found off;
+
+  location /wp-content/ {
+  	alias "<?=getenv("HEROKU_APP_DIR")?>";
+  }
 }
 
 location ~* \.(?:css|js)$ {
@@ -75,6 +79,10 @@ location ~* \.(?:css|js)$ {
   expires 7d;
   access_log off;
   log_not_found off;
+
+  location /wp-content/ {
+  	alias "<?=getenv("HEROKU_APP_DIR")?>";
+  }
 }
 
 location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
@@ -83,6 +91,10 @@ location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
   expires 30d;
   access_log off;
   log_not_found off;
+
+  location /wp-content/ {
+  	alias "<?=getenv("HEROKU_APP_DIR")?>";
+  }
 }
 
 location ~* \.(?:mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
@@ -91,6 +103,10 @@ location ~* \.(?:mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
   expires 90d;
   access_log off;
   log_not_found off;
+
+  location /wp-content/ {
+  	alias "<?=getenv("HEROKU_APP_DIR")?>";
+  }
 }
 
 # WordPress single site rules.
