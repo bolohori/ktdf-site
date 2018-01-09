@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "de01683dcf128d57f353ccc8aa3997e1",
+    "content-hash": "585de07263dfc6728460df6f6211f08a",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cenobitedk/ktdf-theme.git",
-                "reference": "b9a52470a44af63c8dc0b6df78730b867c1e0b3b"
+                "reference": "18a827d0f6689e7213ea602d8a96fdf366dbb5e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cenobitedk/ktdf-theme/zipball/b9a52470a44af63c8dc0b6df78730b867c1e0b3b",
-                "reference": "b9a52470a44af63c8dc0b6df78730b867c1e0b3b",
+                "url": "https://api.github.com/repos/cenobitedk/ktdf-theme/zipball/18a827d0f6689e7213ea602d8a96fdf366dbb5e4",
+                "reference": "18a827d0f6689e7213ea602d8a96fdf366dbb5e4",
                 "shasum": ""
             },
             "require": {
@@ -27,10 +27,10 @@
             "type": "wordpress-theme",
             "description": "Theme for Killtown Death Fest",
             "support": {
-                "source": "https://github.com/cenobitedk/ktdf-theme/tree/1.1.1",
+                "source": "https://github.com/cenobitedk/ktdf-theme/tree/1.1.2",
                 "issues": "https://github.com/cenobitedk/ktdf-theme/issues"
             },
-            "time": "2018-01-09T23:07:38+00:00"
+            "time": "2018-01-09T23:46:02+00:00"
         },
         {
             "name": "composer/ca-bundle",
