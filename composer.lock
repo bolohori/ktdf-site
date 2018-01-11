@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "585de07263dfc6728460df6f6211f08a",
+    "content-hash": "304735e600c1f576c884a397605c1f4e",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cenobitedk/ktdf-theme.git",
-                "reference": "18a827d0f6689e7213ea602d8a96fdf366dbb5e4"
+                "reference": "a29493032b5797454a144433d349be5cecfff2be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cenobitedk/ktdf-theme/zipball/18a827d0f6689e7213ea602d8a96fdf366dbb5e4",
-                "reference": "18a827d0f6689e7213ea602d8a96fdf366dbb5e4",
+                "url": "https://api.github.com/repos/cenobitedk/ktdf-theme/zipball/a29493032b5797454a144433d349be5cecfff2be",
+                "reference": "a29493032b5797454a144433d349be5cecfff2be",
                 "shasum": ""
             },
             "require": {
@@ -27,10 +27,10 @@
             "type": "wordpress-theme",
             "description": "Theme for Killtown Death Fest",
             "support": {
-                "source": "https://github.com/cenobitedk/ktdf-theme/tree/1.1.2",
+                "source": "https://github.com/cenobitedk/ktdf-theme/tree/master",
                 "issues": "https://github.com/cenobitedk/ktdf-theme/issues"
             },
-            "time": "2018-01-09T23:46:02+00:00"
+            "time": "2018-01-10T21:33:50+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -3451,6 +3451,26 @@
             "homepage": "https://wordpress.org/plugins/paypal-donations/"
         },
         {
+            "name": "wpackagist-plugin/responsify-wp",
+            "version": "1.9.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/responsify-wp/",
+                "reference": "tags/1.9.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/responsify-wp.1.9.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/responsify-wp/"
+        },
+        {
             "name": "wpackagist-plugin/social-sharing-toolkit",
             "version": "2.5",
             "source": {
@@ -3469,26 +3489,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/social-sharing-toolkit/"
-        },
-        {
-            "name": "wpackagist-plugin/ultimate-maintenance-mode",
-            "version": "1.7.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/ultimate-maintenance-mode/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ultimate-maintenance-mode.zip?timestamp=1513196905",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/ultimate-maintenance-mode/"
         },
         {
             "name": "wpackagist-plugin/widget-css-classes",
@@ -3534,16 +3534,16 @@
     "packages-dev": [
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v128",
+            "version": "v130",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "b9dab975a03c6175ad6fa7424e809104a288f80b"
+                "reference": "1bbbc45da0f80dbb75606972c26236172b7d724c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/b9dab975a03c6175ad6fa7424e809104a288f80b",
-                "reference": "b9dab975a03c6175ad6fa7424e809104a288f80b",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/1bbbc45da0f80dbb75606972c26236172b7d724c",
+                "reference": "1bbbc45da0f80dbb75606972c26236172b7d724c",
                 "shasum": ""
             },
             "bin": [
@@ -3574,7 +3574,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2018-01-04T22:23:17+00:00"
+            "time": "2018-01-11T17:45:21+00:00"
         }
     ],
     "aliases": [],
