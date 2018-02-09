@@ -71,31 +71,31 @@ location / {
 rewrite /wp-admin$ $scheme://$host$uri/ permanent;
 
 # Directives to send expires headers and turn off 404 error logging.
-# location ~* \.(?:eot|oft|ttf|woff2?)$ {
-#   add_header Access-Control-Allow-Origin *;
-#   add_header Cache-Control public;
-#   expires max;
-#   access_log off;
-#   log_not_found off;
-# }
-#
-# location ~* \.(?:css|js)$ {
-#   add_header Cache-Control public;
-#   expires 7d;
-#   access_log off;
-#   log_not_found off;
-# }
-#
-# location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
-#   add_header Cache-Control public;
-#   expires 30d;
-#   access_log off;
-#   log_not_found off;
-# }
-#
-# location ~* \.(?:mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
-#   add_header Cache-Control public;
-#   expires 90d;
-#   access_log off;
-#   log_not_found off;
-# }
+location ~* \.(?:eot|oft|ttf|woff2?)$ {
+  add_header Access-Control-Allow-Origin *;
+  add_header Cache-Control public;
+  expires max;
+  access_log off;
+  log_not_found off;
+}
+
+location ~* \.(?:css|js)$ {
+  add_header Cache-Control public;
+  expires 7d;
+  access_log off;
+  log_not_found off;
+}
+
+location ~* \.(?:jpg|jpeg|gif|png|ico|bmp|svg|svgz)$ {
+  add_header Cache-Control public;
+  expires 30d;
+  access_log off;
+  log_not_found off;
+}
+
+location ~* \.(?:mp3|mp4|m4a|wav|zip|doc|xls|rtf)$ {
+  add_header Cache-Control public;
+  expires 90d;
+  access_log off;
+  log_not_found off;
+}
