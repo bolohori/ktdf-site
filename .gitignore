@@ -1,5 +1,7 @@
 /vendor/
 /wordpress/
-/wp-content/
+wp-content/
+/temp/
+/www/
 nginx-wordpress.conf
 .env

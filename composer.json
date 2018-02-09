@@ -19,9 +19,9 @@
   "extra": {
     "wordpress-install-dir": "wordpress",
     "installer-paths": {
-      "wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-      "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+      "public/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
     }
   },
   "require": {
@@ -42,7 +42,9 @@
     "wpackagist-plugin/wp-global-site-tag": "1.0.0"
   },
   "scripts": {
-    "post-install-cmd": "",
+    "post-install-cmd": [
+      "./script/post-install-cmd.sh"
+    ],
     "wordpress-setup-core-install-prompt": "wp core install --prompt",
     "wordpress-setup-core-install": "wp core install --skip-email",
     "wordpress-setup-post-core-install": "wp option update blogdescription \"Killtown Death Fest\" && wp option update timezone_string Europe/Paris",
