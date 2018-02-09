@@ -38,7 +38,8 @@
     "wpackagist-plugin/responsify-wp": "1.9.8",
     "wpackagist-plugin/social-sharing-toolkit": "^2.5",
     "wpackagist-plugin/widget-css-classes": "^1.5.1",
-    "wpackagist-plugin/wordpress-importer": "^0.6.3"
+    "wpackagist-plugin/wordpress-importer": "^0.6.3",
+    "wpackagist-plugin/wp-global-site-tag": "1.0.0"
   },
   "scripts": {
     "post-install-cmd": "",
@@ -48,7 +49,7 @@
     "wordpress-setup-clear-home": "wp option delete home || true",
     "wordpress-setup-configure-s3": "echo '{\"domain\":\"path\",\"copy-to-s3\":\"1\",\"serve-from-s3\":\"1\",\"ssl\":\"request\"}' | wp option add tantan_wordpress_s3 --format=json",
     "wordpress-setup-enable-plugins": "wp plugin activate amazon-web-services amazon-s3-and-cloudfront",
-    "wordpress-setup-enable-custom-plugins": "wp plugin activate add-meta-tags image-widget gigpress paypal-donations responsify-wp social-sharing-toolkit widget-css-classes wordpress-importer",
+    "wordpress-setup-enable-custom-plugins": "wp plugin activate add-meta-tags image-widget gigpress paypal-donations responsify-wp social-sharing-toolkit widget-css-classes wordpress-importer wp-global-site-tag",
     "wordpress-setup-permalink-structure": "wp rewrite structure '/%year%/%monthnum%/%day%/%postname%/' || true",
     "wordpress-setup": [
       "@wordpress-setup-core-install-prompt",
