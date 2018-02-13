@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f514b78341f1510917bf2df474e3aa83",
+    "content-hash": "4c6262111ed7435005c0b8fb3514e32a",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -3549,6 +3549,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/gigpress/"
+        },
+        {
+            "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
+            "version": "5.2.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
+                "reference": "tags/5.2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.2.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
         },
         {
             "name": "wpackagist-plugin/image-widget",
