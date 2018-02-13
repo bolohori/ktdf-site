@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d6de0f37487b3c8405dcbe6a0832377",
+    "content-hash": "634042cff1d3160584ee8d2ddbd784b9",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -3689,26 +3689,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-global-site-tag/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-memcached-manager",
-            "version": "0.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-memcached-manager/",
-                "reference": "tags/0.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-memcached-manager.0.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-memcached-manager/"
         }
     ],
     "packages-dev": [
