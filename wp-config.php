@@ -1,4 +1,12 @@
 <?php
+define(‘WP_CACHE’, true);
+/**** MEMCACHIER CREDENTIALS ****/
+// global $memcached_servers;
+// $memcached_servers = array('default' => array('YOUR_SERVER:PORT'));
+define('MEMCACHIER_SERVERS', getenv('MEMCACHIER_SERVERS'));
+define('MEMCACHIER_USER', getenv('MEMCACHIER_USERNAME');
+define('MEMCACHIER_PASSWORD', getenv('MEMCACHIER_PASSWORD');
+/********************************/
 
 define('WP_CONTENT_DIR', dirname(__FILE__) . '/www/wp-content/');
 
@@ -10,8 +18,6 @@ define('DB_HOST',     $db['host'].':'.$db['port']);
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 $table_prefix  = 'wp_';
-
-define(‘WP_CACHE’, true);
 
 define('AWS_ACCESS_KEY_ID', getenv('AWS_ACCESS_KEY_ID')?:getenv('BUCKETEER_AWS_ACCESS_KEY_ID'));
 define('AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY')?:getenv('BUCKETEER_AWS_SECRET_ACCESS_KEY'));
