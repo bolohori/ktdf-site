@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Special preparations for caching.
+cp public/wp-content/plugins/batcache/advanced-cache.php public/wp-content
+cp public/wp-content/plugins/memcached-redux/object-cache.php public/wp-content
+
 # Cleanup dirs
 # rm -rf tmp/public.building tmp/public.old
 # mkdir -p tmp/public.building

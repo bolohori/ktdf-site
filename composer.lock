@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "65eb5342b73cb0f903c412d7d9816275",
+    "content-hash": "3a6ad6d99d711e4231df036c9a705595",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -3501,6 +3501,26 @@
             "homepage": "https://wordpress.org/plugins/amazon-web-services/"
         },
         {
+            "name": "wpackagist-plugin/batcache",
+            "version": "1.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/batcache/",
+                "reference": "tags/1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/batcache.1.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/batcache/"
+        },
+        {
             "name": "wpackagist-plugin/gigpress",
             "version": "2.3.19",
             "source": {
@@ -3539,6 +3559,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/image-widget/"
+        },
+        {
+            "name": "wpackagist-plugin/memcached-redux",
+            "version": "0.1.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/memcached-redux/",
+                "reference": "tags/0.1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/memcached-redux.0.1.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/memcached-redux/"
         },
         {
             "name": "wpackagist-plugin/paypal-donations",
@@ -3659,21 +3699,41 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-global-site-tag/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-memcached-manager",
+            "version": "0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-memcached-manager/",
+                "reference": "tags/0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-memcached-manager.0.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-memcached-manager/"
         }
     ],
     "packages-dev": [
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v130",
+            "version": "v131",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "1bbbc45da0f80dbb75606972c26236172b7d724c"
+                "reference": "06a81e71d94115668de3f202547fd9d517dc76ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/1bbbc45da0f80dbb75606972c26236172b7d724c",
-                "reference": "1bbbc45da0f80dbb75606972c26236172b7d724c",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/06a81e71d94115668de3f202547fd9d517dc76ca",
+                "reference": "06a81e71d94115668de3f202547fd9d517dc76ca",
                 "shasum": ""
             },
             "bin": [
@@ -3704,7 +3764,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2018-01-11T17:45:21+00:00"
+            "time": "2018-02-12T23:40:16+00:00"
         }
     ],
     "aliases": [],

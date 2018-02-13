@@ -11,6 +11,8 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 $table_prefix  = 'wp_';
 
+define(‘WP_CACHE’, true);
+
 define('AWS_ACCESS_KEY_ID', getenv('AWS_ACCESS_KEY_ID')?:getenv('BUCKETEER_AWS_ACCESS_KEY_ID'));
 define('AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY')?:getenv('BUCKETEER_AWS_SECRET_ACCESS_KEY'));
 define('AS3CF_BUCKET', getenv('S3_BUCKET')?:getenv('BUCKETEER_BUCKET_NAME'));
