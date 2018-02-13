@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0728d019b52cdd85c16eac127263a5de",
+    "content-hash": "9ea32239f77665071a61e464ac2ffa39",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -601,6 +601,16 @@
                 "schema"
             ],
             "time": "2017-10-21T13:15:38+00:00"
+        },
+        {
+            "name": "memcachier/wordpress-cache",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/memcachier/wordpress-cache",
+                "reference": "master"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "mustache/mustache",
@@ -3519,26 +3529,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/batcache/"
-        },
-        {
-            "name": "wpackagist-plugin/clinical-memcachier",
-            "version": "0.4",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/clinical-memcachier/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/clinical-memcachier.zip?timestamp=1511866351",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/clinical-memcachier/"
         },
         {
             "name": "wpackagist-plugin/gigpress",

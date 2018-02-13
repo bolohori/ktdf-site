@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Special preparations for caching.
-cp public/wp-content/plugins/clinical-memcachier/object-cache-memcachier.txt public/wp-content/object-cache.php
+cp public/wp-content/plugins/wordpress-cache/object-cache.php public/wp-content
 cp public/wp-content/plugins/batcache/advanced-cache.php public/wp-content
 
 # Cleanup dirs
