@@ -18,11 +18,11 @@
     {
       "type": "package",
       "package": {
-        "name": "memcachier/wordpress-cache",
-        "version": "1.0.0",
+        "name": "soderlind/memcachier",
+        "version": "1.0.1",
         "type": "wordpress-plugin",
         "source": {
-          "url": "https://github.com/memcachier/wordpress-cache",
+          "url": "https://github.com/soderlind/memcachier",
           "type": "git",
           "reference": "master"
         }
@@ -44,7 +44,7 @@
     "wpackagist-plugin/amazon-s3-and-cloudfront": "^1.2",
     "wp-cli/wp-cli": "^1.3.0",
     "cenobitedk/ktdf-theme": "dev-master#1.3.0",
-    "memcachier/wordpress-cache": "*",
+    "soderlind/memcachier": "*",
     "wpackagist-plugin/add-meta-tags": "^2.11.3",
     "wpackagist-plugin/batcache": "1.4",
     "wpackagist-plugin/image-widget": "^4.4.6",
