@@ -4,8 +4,8 @@ define(‘WP_CACHE’, true);
 // global $memcached_servers;
 // $memcached_servers = array('default' => array('YOUR_SERVER:PORT'));
 define('MEMCACHIER_SERVERS', getenv('MEMCACHIER_SERVERS'));
-define('MEMCACHIER_USER', getenv('MEMCACHIER_USERNAME');
-define('MEMCACHIER_PASSWORD', getenv('MEMCACHIER_PASSWORD');
+define('MEMCACHIER_USER', getenv('MEMCACHIER_USERNAME'));
+define('MEMCACHIER_PASSWORD', getenv('MEMCACHIER_PASSWORD'));
 /********************************/
 
 define('WP_CONTENT_DIR', dirname(__FILE__) . '/www/wp-content/');
