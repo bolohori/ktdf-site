@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a6ad6d99d711e4231df036c9a705595",
+    "content-hash": "0728d019b52cdd85c16eac127263a5de",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -3521,6 +3521,26 @@
             "homepage": "https://wordpress.org/plugins/batcache/"
         },
         {
+            "name": "wpackagist-plugin/clinical-memcachier",
+            "version": "0.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/clinical-memcachier/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/clinical-memcachier.zip?timestamp=1511866351",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/clinical-memcachier/"
+        },
+        {
             "name": "wpackagist-plugin/gigpress",
             "version": "2.3.19",
             "source": {
@@ -3559,26 +3579,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/image-widget/"
-        },
-        {
-            "name": "wpackagist-plugin/memcached-redux",
-            "version": "0.1.6",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/memcached-redux/",
-                "reference": "tags/0.1.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/memcached-redux.0.1.6.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/memcached-redux/"
         },
         {
             "name": "wpackagist-plugin/paypal-donations",
