@@ -1,10 +1,10 @@
 <?php
 define(‘WP_CACHE’, true);
 /**** MEMCACHIER CREDENTIALS ****/
-// global $memcached_servers;
-// $memcached_servers = array('default' => array(getenv('MEMCACHIER_SERVERS')));
-// define('MEMCACHIER_USER', getenv('MEMCACHIER_USERNAME'));
-// define('MEMCACHIER_PASSWORD', getenv('MEMCACHIER_PASSWORD'));
+global $memcached_servers;
+$memcached_servers = array('default' => array(getenv('MEMCACHIER_SERVERS')));
+define('MEMCACHIER_USER', getenv('MEMCACHIER_USERNAME'));
+define('MEMCACHIER_PASSWORD', getenv('MEMCACHIER_PASSWORD'));
 /********************************/
 
 define('WP_CONTENT_DIR', dirname(__FILE__) . '/www/wp-content/');
