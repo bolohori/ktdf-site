@@ -49,13 +49,13 @@
     "wpackagist-plugin/batcache": "1.4",
     "wpackagist-plugin/image-widget": "^4.4.6",
     "wpackagist-plugin/gigpress": "^2.3.19",
-    "wpackagist-plugin/google-analytics-dashboard-for-wp": "5.2.2",
+    "wpackagist-plugin/google-analytics-dashboard-for-wp": "5.3",
     "wpackagist-plugin/paypal-donations": "^1.9.3",
     "wpackagist-plugin/responsify-wp": "1.9.8",
     "wpackagist-plugin/social-sharing-toolkit": "^2.5",
     "wpackagist-plugin/widget-css-classes": "^1.5.1",
     "wpackagist-plugin/wordpress-importer": "^0.6.3",
-    "wpackagist-plugin/wp-global-site-tag": "1.0.0"
+    "wpackagist-plugin/wp-global-site-tag": "1.0.3"
   },
   "scripts": {
     "post-install-cmd": [
