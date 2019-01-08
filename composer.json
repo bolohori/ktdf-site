@@ -1,4 +1,6 @@
 {
+  "name": "ktdf-site",
+  "description": "wordpress site for killtowndeathfest.com",
   "repositories": [{
       "type": "composer",
       "url": "https://wpackagist.org"
