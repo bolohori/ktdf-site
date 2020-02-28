@@ -39,16 +39,16 @@ location = /robots.txt {
 
 # Deny all attempts to access hidden files such as .htaccess, .htpasswd, .DS_Store (Mac).
 # Keep logging the requests to parse later (or to pass to firewall utilities such as fail2ban)
-location ~ /\. {
-	deny all;
-}
+# location ~ /\. {
+#   deny all;
+# }
 
 # Deny access to any files with a .php extension in the uploads directory
 # Works in sub-directory installs and also in multisite network
 # Keep logging the requests to parse later (or to pass to firewall utilities such as fail2ban)
-location ~* /(?:uploads|files)/.*\.php$ {
-	deny all;
-}
+# location ~* /(?:uploads|files)/.*\.php$ {
+#   deny all;
+# }
 
 # location /wp-content/ {
 # 	root "<?=getenv("HEROKU_APP_DIR")?>";
