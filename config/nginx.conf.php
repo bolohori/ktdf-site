@@ -63,9 +63,9 @@ location = /robots.txt {
 
 # This order might seem weird - this is attempted to match last if rules below fail.
 # http://wiki.nginx.org/HttpCoreModule
-# location / {
-#	  try_files $uri $uri/ /index.php?$args;
-# }
+location / {
+  try_files $uri $uri/ /index.php?$args;
+}
 
 # Add trailing slash to */wp-admin requests.
 # rewrite /wp-admin$ $scheme://$host$uri/ permanent;
