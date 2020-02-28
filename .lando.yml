@@ -1,0 +1,4 @@
+name: killtowndeathfest2020
+recipe: wordpress
+config:
+  webroot: web
