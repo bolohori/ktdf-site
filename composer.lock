@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6225d94f197458720768cf761698c8a0",
+    "content-hash": "5ccdd9fcceff008a1e2b5ffbbb9e452b",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -760,6 +760,24 @@
                 "environment"
             ],
             "time": "2019-12-14T13:59:29+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/autoptimize",
+            "version": "2.6.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autoptimize/",
+                "reference": "tags/2.6.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autoptimize.2.6.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autoptimize/"
         }
     ],
     "packages-dev": [
