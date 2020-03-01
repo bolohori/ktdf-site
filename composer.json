@@ -83,7 +83,6 @@
     },
     "dropin-paths": {
       "web/app/": [
-        "package:tillkruss/redis-cache:includes/object-cache.php",
         "package:frc/batcache:advanced-cache.php"
       ]
     },

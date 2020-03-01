@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ccdd9fcceff008a1e2b5ffbbb9e452b",
+    "content-hash": "8eccb64d6e27f6c8c47ca3d58d0dc30f",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
