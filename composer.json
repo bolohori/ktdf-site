@@ -56,6 +56,7 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "tillkruss/redis-cache": "^1.5",
     "vlucas/phpdotenv": "^4.1.0",
+    "wp-cli/wp-cli-bundle": "^2.4",
     "wpackagist-plugin/autoptimize": "^2.6"
   },
   "require-dev": {

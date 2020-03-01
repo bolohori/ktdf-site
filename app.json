@@ -1,0 +1,25 @@
+{
+  "name": "KTDF WordPress",
+  "description": "WordPress, fully managed with Bedrock using Composer and configured using environment variables.",
+  "keywords": ["php", "wordpress", "blog", "cms"],
+  "website": "www.killtowndeathfest.com",
+  "repository": "https://github.com/cenobitedk/ktdf-site",
+  "logo": "https://s.w.org/about/images/logos/wordpress-logo-notext-rgb.png",
+  "success_url": "/",
+  "scripts": {
+    "postdeploy": "./postdeploy.sh"
+  },
+  "env": {
+    "WP_ENV": {
+      "description": "Set specific environment config to load or fallback to production.",
+      "required": false
+    },
+    "WP_HOME": {},
+    "WP_CACHE": {
+      "description": "Activate caching (batcache).",
+      "value": "true"
+    }
+  },
+  "addons": ["jawsdb", "redis", "memchacier"],
+  "image": "heroku/php"
+}
