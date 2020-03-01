@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43e116a1ede33ee948875f8fc7a80197",
+    "content-hash": "dc83e04aec360cc91e8797228a1404a0",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cenobitedk/ktdf-theme.git",
-                "reference": "3c6c91269911b26faa40fed83c8909dc75308483"
+                "reference": "d138ada41e21b1e5b35bb971f3b4672f6abd92e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cenobitedk/ktdf-theme/zipball/3c6c91269911b26faa40fed83c8909dc75308483",
-                "reference": "3c6c91269911b26faa40fed83c8909dc75308483",
+                "url": "https://api.github.com/repos/cenobitedk/ktdf-theme/zipball/d138ada41e21b1e5b35bb971f3b4672f6abd92e0",
+                "reference": "d138ada41e21b1e5b35bb971f3b4672f6abd92e0",
                 "shasum": ""
             },
             "archive": {
@@ -32,10 +32,10 @@
             "type": "wordpress-theme",
             "description": "Theme for Killtown Deathfest",
             "support": {
-                "source": "https://github.com/cenobitedk/ktdf-theme/tree/2.0.0",
+                "source": "https://github.com/cenobitedk/ktdf-theme/tree/2.0.1",
                 "issues": "https://github.com/cenobitedk/ktdf-theme/issues"
             },
-            "time": "2020-02-28T21:46:05+00:00"
+            "time": "2020-03-01T21:04:52+00:00"
         },
         {
             "name": "cenobitedk/wp-env-heroku-jawsdb",

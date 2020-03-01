@@ -44,7 +44,7 @@
   ],
   "require": {
     "php": ">=7.1",
-    "cenobitedk/ktdf-theme": "2.0.0",
+    "cenobitedk/ktdf-theme": "^2.0.0",
     "cenobitedk/wp-env-heroku-jawsdb": "^1.0",
     "composer/installers": "^1.8",
     "frc/batcache": "^1.2",
