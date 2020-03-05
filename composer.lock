@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "58b1fa7328abc58bff8cae98625a101b",
+    "content-hash": "4107dea9583b2189406afa5edbf4de46",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -556,6 +556,41 @@
             "time": "2019-08-29T20:11:49+00:00"
         },
         {
+            "name": "deliciousbrains/wp-amazon-s3-and-cloudfront",
+            "version": "2.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deliciousbrains/wp-amazon-s3-and-cloudfront.git",
+                "reference": "0142a3b9bd32c9d16529ab0d6f0bb0eeaf65715d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deliciousbrains/wp-amazon-s3-and-cloudfront/zipball/0142a3b9bd32c9d16529ab0d6f0bb0eeaf65715d",
+                "reference": "0142a3b9bd32c9d16529ab0d6f0bb0eeaf65715d",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "description": "Automatically copies media uploads to a storage provider's bucket for delivery. Optionally configure a CDN for even faster delivery.",
+            "homepage": "https://github.com/deliciousbrains/wp-amazon-s3-and-cloudfront",
+            "keywords": [
+                "amazon-web-services",
+                "cdn",
+                "cloudfront",
+                "digitalocean",
+                "plugin",
+                "s3",
+                "spaces"
+            ],
+            "time": "2019-12-09T12:07:54+00:00"
+        },
+        {
             "name": "frc/batcache",
             "version": "v1.2-p1",
             "source": {
@@ -580,6 +615,48 @@
             "description": "A memcached HTML page cache for WordPress. Fork of the automattic/batcache.",
             "homepage": "https://github.com/frc/batcache",
             "time": "2015-10-05T08:58:06+00:00"
+        },
+        {
+            "name": "frc/wp-env-heroku-amazon-aws",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/frc/wp-env-heroku-amazon-aws.git",
+                "reference": "3fc0fe50b9819e1874ab510f2ba0dbbd1a6d32dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/frc/wp-env-heroku-amazon-aws/zipball/3fc0fe50b9819e1874ab510f2ba0dbbd1a6d32dd",
+                "reference": "3fc0fe50b9819e1874ab510f2ba0dbbd1a6d32dd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/AWS.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josep Roca",
+                    "email": "josep.roca@frantic.com"
+                }
+            ],
+            "description": "Export Amazon AWS configuration for amazon-web-services WP plugin.",
+            "keywords": [
+                "amazon aws",
+                "amazon web services",
+                "heroku",
+                "wordpress"
+            ],
+            "time": "2016-10-27T11:29:27+00:00"
         },
         {
             "name": "frc/wp-env-heroku-redis",

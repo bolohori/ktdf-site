@@ -5,4 +5,4 @@ wp redis enable
 wp redis update-dropin
 
 # Activate Interfacelab Media Cloud plugin.
-wp plugin activate ilab-media-tools
+wp plugin activate wp-amazon-s3-and-cloudfront

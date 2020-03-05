@@ -18,6 +18,18 @@
     "WP_CACHE": {
       "description": "Activate caching (batcache).",
       "value": "true"
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "description": "Set AWS access key ID.",
+      "required": false
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "Set AWS secret access key.",
+      "required": false
+    },
+    "AWS_BUCKET": {
+      "description": "Set AWS bucket name.",
+      "required": false
     }
   },
   "addons": ["jawsdb", "redis", "memchacier"],
