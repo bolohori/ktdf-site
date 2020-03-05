@@ -1,5 +1,8 @@
 index             index.html index.php;
 
+# Upload file size.
+client_max_body_size 500m;
+
 # Enable gzip compression.
 gzip              on;
 gzip_vary         on;
