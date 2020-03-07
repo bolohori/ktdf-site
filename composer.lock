@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e0cb0506ea6124fd9ff25f68dad30f7",
+    "content-hash": "20fe4172a553c4f027cf828927c9174d",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -4109,6 +4109,24 @@
             "homepage": "https://wordpress.org/plugins/cloudflare/"
         },
         {
+            "name": "wpackagist-plugin/google-analytics-for-wordpress",
+            "version": "7.10.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
+                "reference": "tags/7.10.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.7.10.4.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/google-analytics-for-wordpress/"
+        },
+        {
             "name": "wpackagist-plugin/ilab-media-tools",
             "version": "3.3.18",
             "source": {
@@ -4125,24 +4143,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ilab-media-tools/"
-        },
-        {
-            "name": "wpackagist-plugin/publitio-offloading",
-            "version": "1.0.9",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/publitio-offloading/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/publitio-offloading.zip?timestamp=1575979683"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/publitio-offloading/"
         }
     ],
     "packages-dev": [
@@ -4456,6 +4456,24 @@
                 "standards"
             ],
             "time": "2020-01-30T22:20:29+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/publitio-offloading",
+            "version": "1.0.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/publitio-offloading/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/publitio-offloading.zip?timestamp=1575979683"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/publitio-offloading/"
         }
     ],
     "aliases": [],
