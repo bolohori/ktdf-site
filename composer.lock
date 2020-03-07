@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a9a30c3a6751f071ae86a91c5c34ebf",
+    "content-hash": "04197660dc08adcc02b557d59dac0c0a",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -85,6 +85,49 @@
                 "source": "https://github.com/cenobitedk/wp-env-heroku-jawsdb/tree/v1.1.0"
             },
             "time": "2020-02-28T21:12:28+00:00"
+        },
+        {
+            "name": "cenobitedk/wp-env-ilab-aws",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cenobitedk/wp-env-ilab-aws.git",
+                "reference": "9d7e6fb3d30c66c383b6b41cf27c4b7816feb284"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cenobitedk/wp-env-ilab-aws/zipball/9d7e6fb3d30c66c383b6b41cf27c4b7816feb284",
+                "reference": "9d7e6fb3d30c66c383b6b41cf27c4b7816feb284",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/AWS.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeppe Hasseriis",
+                    "email": "j.hasseriis@gmail.com"
+                }
+            ],
+            "description": "Export Interfacelab Media Cloud configuration for WordPress",
+            "keywords": [
+                "Interfacelab Media Cloud",
+                "amazon aws",
+                "amazon web services",
+                "s3",
+                "wordpress"
+            ],
+            "time": "2020-03-03T21:02:16+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -4064,6 +4107,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/cloudflare/"
+        },
+        {
+            "name": "wpackagist-plugin/ilab-media-tools",
+            "version": "3.3.18",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ilab-media-tools/",
+                "reference": "tags/3.3.18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ilab-media-tools.3.3.18.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ilab-media-tools/"
         },
         {
             "name": "wpackagist-plugin/publitio-offloading",

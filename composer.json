@@ -46,6 +46,7 @@
     "php": ">=7.1",
     "cenobitedk/ktdf-theme": "^2.0",
     "cenobitedk/wp-env-heroku-jawsdb": "^1.0",
+    "cenobitedk/wp-env-ilab-aws": "^1.1",
     "composer/installers": "^1.8",
     "frc/batcache": "^1.2",
     "frc/wp-env-heroku-redis": "^2.0",
@@ -59,6 +60,7 @@
     "wp-cli/wp-cli-bundle": "^2.4",
     "wpackagist-plugin/autoptimize": "^2.6",
     "wpackagist-plugin/cloudflare": "^3.4",
+    "wpackagist-plugin/ilab-media-tools": "^3.3",
     "wpackagist-plugin/publitio-offloading": "^1.0"
   },
   "require-dev": {
