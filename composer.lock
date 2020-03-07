@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cenobitedk/ktdf-theme.git",
-                "reference": "9c0a516edfb486b55309f8da292fd56ef6f1fc56"
+                "reference": "29dfce67e1e6d0baa4442ffa1d1215848904a490"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cenobitedk/ktdf-theme/zipball/9c0a516edfb486b55309f8da292fd56ef6f1fc56",
-                "reference": "9c0a516edfb486b55309f8da292fd56ef6f1fc56",
+                "url": "https://api.github.com/repos/cenobitedk/ktdf-theme/zipball/29dfce67e1e6d0baa4442ffa1d1215848904a490",
+                "reference": "29dfce67e1e6d0baa4442ffa1d1215848904a490",
                 "shasum": ""
             },
             "archive": {
@@ -32,10 +32,10 @@
             "type": "wordpress-theme",
             "description": "Theme for Killtown Deathfest",
             "support": {
-                "source": "https://github.com/cenobitedk/ktdf-theme/tree/2.1.0",
+                "source": "https://github.com/cenobitedk/ktdf-theme/tree/2.1.1",
                 "issues": "https://github.com/cenobitedk/ktdf-theme/issues"
             },
-            "time": "2020-03-02T21:08:28+00:00"
+            "time": "2020-03-07T19:56:16+00:00"
         },
         {
             "name": "cenobitedk/wp-env-heroku-jawsdb",
@@ -4456,24 +4456,6 @@
                 "standards"
             ],
             "time": "2020-01-30T22:20:29+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/publitio-offloading",
-            "version": "1.0.9",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/publitio-offloading/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/publitio-offloading.zip?timestamp=1575979683"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/publitio-offloading/"
         }
     ],
     "aliases": [],
