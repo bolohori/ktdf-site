@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "20fe4172a553c4f027cf828927c9174d",
+    "content-hash": "6b272be46f2ca060cabcc13142ad717d",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -4143,6 +4143,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ilab-media-tools/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-maintenance",
+            "version": "5.1.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-maintenance/",
+                "reference": "tags/5.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-maintenance.5.1.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-maintenance/"
         }
     ],
     "packages-dev": [

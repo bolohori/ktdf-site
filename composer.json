@@ -62,7 +62,8 @@
     "wpackagist-plugin/autoptimize": "^2.6",
     "wpackagist-plugin/cloudflare": "^3.4",
     "wpackagist-plugin/google-analytics-for-wordpress": "^7.10",
-    "wpackagist-plugin/ilab-media-tools": "^3.3"
+    "wpackagist-plugin/ilab-media-tools": "^3.3",
+    "wpackagist-plugin/wp-maintenance": "^5.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.4",
