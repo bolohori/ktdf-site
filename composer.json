@@ -44,6 +44,7 @@
   ],
   "require": {
     "php": ">=7.1",
+    "ext-exif": "*",
     "ext-gd": "*",
     "ext-mbstring": "*",
     "cenobitedk/ktdf-theme": "^2.0",

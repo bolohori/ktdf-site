@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b272be46f2ca060cabcc13142ad717d",
+    "content-hash": "bfb325f34727b94c5e60f2908a1201a6",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
@@ -4128,15 +4128,15 @@
         },
         {
             "name": "wpackagist-plugin/ilab-media-tools",
-            "version": "3.3.18",
+            "version": "3.3.19",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ilab-media-tools/",
-                "reference": "tags/3.3.18"
+                "reference": "tags/3.3.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ilab-media-tools.3.3.18.zip"
+                "url": "https://downloads.wordpress.org/plugin/ilab-media-tools.3.3.19.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -4485,7 +4485,9 @@
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.1",
-        "ext-gd": "*"
+        "ext-exif": "*",
+        "ext-gd": "*",
+        "ext-mbstring": "*"
     },
     "platform-dev": []
 }
