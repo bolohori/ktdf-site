@@ -45,6 +45,7 @@
   "require": {
     "php": ">=7.1",
     "ext-gd": "*",
+    "ext-mbstring": "*",
     "cenobitedk/ktdf-theme": "^2.0",
     "cenobitedk/wp-env-heroku-jawsdb": "^1.0",
     "cenobitedk/wp-env-ilab-aws": "^1.1",
