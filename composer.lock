@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bfb325f34727b94c5e60f2908a1201a6",
+    "content-hash": "3aa2a22cf09b5bc3911b1206f70e5db9",
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cenobitedk/ktdf-theme.git",
-                "reference": "29dfce67e1e6d0baa4442ffa1d1215848904a490"
+                "reference": "0cb85d57adb3d2d32c6a2f05c20e929ee345b4d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cenobitedk/ktdf-theme/zipball/29dfce67e1e6d0baa4442ffa1d1215848904a490",
-                "reference": "29dfce67e1e6d0baa4442ffa1d1215848904a490",
+                "url": "https://api.github.com/repos/cenobitedk/ktdf-theme/zipball/0cb85d57adb3d2d32c6a2f05c20e929ee345b4d9",
+                "reference": "0cb85d57adb3d2d32c6a2f05c20e929ee345b4d9",
                 "shasum": ""
             },
             "archive": {
@@ -32,10 +32,10 @@
             "type": "wordpress-theme",
             "description": "Theme for Killtown Deathfest",
             "support": {
-                "source": "https://github.com/cenobitedk/ktdf-theme/tree/2.1.1",
+                "source": "https://github.com/cenobitedk/ktdf-theme/tree/2.2.0",
                 "issues": "https://github.com/cenobitedk/ktdf-theme/issues"
             },
-            "time": "2020-03-07T19:56:16+00:00"
+            "time": "2020-03-11T11:53:57+00:00"
         },
         {
             "name": "cenobitedk/wp-env-heroku-jawsdb",
@@ -187,16 +187,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.9.3",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "1291a16ce3f48bfdeca39d64fca4875098af4d7b"
+                "reference": "472c917b2a083ec7d2fa25c55fd099d1300e2515"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/1291a16ce3f48bfdeca39d64fca4875098af4d7b",
-                "reference": "1291a16ce3f48bfdeca39d64fca4875098af4d7b",
+                "url": "https://api.github.com/repos/composer/composer/zipball/472c917b2a083ec7d2fa25c55fd099d1300e2515",
+                "reference": "472c917b2a083ec7d2fa25c55fd099d1300e2515",
                 "shasum": ""
             },
             "require": {
@@ -209,17 +209,17 @@
                 "psr/log": "^1.0",
                 "seld/jsonlint": "^1.4",
                 "seld/phar-utils": "^1.0",
-                "symfony/console": "^2.7 || ^3.0 || ^4.0",
-                "symfony/filesystem": "^2.7 || ^3.0 || ^4.0",
-                "symfony/finder": "^2.7 || ^3.0 || ^4.0",
-                "symfony/process": "^2.7 || ^3.0 || ^4.0"
+                "symfony/console": "^2.7 || ^3.0 || ^4.0 || ^5.0",
+                "symfony/filesystem": "^2.7 || ^3.0 || ^4.0 || ^5.0",
+                "symfony/finder": "^2.7 || ^3.0 || ^4.0 || ^5.0",
+                "symfony/process": "^2.7 || ^3.0 || ^4.0 || ^5.0"
             },
             "conflict": {
                 "symfony/console": "2.8.38"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7",
-                "phpunit/phpunit-mock-objects": "^2.3 || ^3.0"
+                "phpspec/prophecy": "^1.10",
+                "symfony/phpunit-bridge": "^3.4"
             },
             "suggest": {
                 "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
@@ -232,7 +232,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.10-dev"
                 }
             },
             "autoload": {
@@ -263,7 +263,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2020-02-04T11:58:49+00:00"
+            "time": "2020-03-10T13:08:05+00:00"
         },
         {
             "name": "composer/installers",
@@ -4128,15 +4128,15 @@
         },
         {
             "name": "wpackagist-plugin/ilab-media-tools",
-            "version": "3.3.19",
+            "version": "3.3.21",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ilab-media-tools/",
-                "reference": "tags/3.3.19"
+                "reference": "tags/3.3.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ilab-media-tools.3.3.19.zip"
+                "url": "https://downloads.wordpress.org/plugin/ilab-media-tools.3.3.21.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
