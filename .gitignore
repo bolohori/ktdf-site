@@ -9,6 +9,7 @@ web/app/uploads/*
 # Dropins
 web/app/object-cache.php
 web/app/advanced-cache.php
+web/app/mcloud-views
 
 # Themes
 web/app/themes/ktdf-theme
