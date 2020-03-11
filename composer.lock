@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cenobitedk/ktdf-theme",
-            "version": "2.2.1",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cenobitedk/ktdf-theme.git",
-                "reference": "ebad6e107b2b05dff9b1433ce7efa254b7cc9a55"
+                "reference": "cb208d9166bf1ad49800c897513069aaa2fe2754"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cenobitedk/ktdf-theme/zipball/ebad6e107b2b05dff9b1433ce7efa254b7cc9a55",
-                "reference": "ebad6e107b2b05dff9b1433ce7efa254b7cc9a55",
+                "url": "https://api.github.com/repos/cenobitedk/ktdf-theme/zipball/cb208d9166bf1ad49800c897513069aaa2fe2754",
+                "reference": "cb208d9166bf1ad49800c897513069aaa2fe2754",
                 "shasum": ""
             },
             "archive": {
@@ -32,10 +32,10 @@
             "type": "wordpress-theme",
             "description": "Theme for Killtown Deathfest",
             "support": {
-                "source": "https://github.com/cenobitedk/ktdf-theme/tree/2.2.1",
+                "source": "https://github.com/cenobitedk/ktdf-theme/tree/2.2.2",
                 "issues": "https://github.com/cenobitedk/ktdf-theme/issues"
             },
-            "time": "2020-03-11T12:36:18+00:00"
+            "time": "2020-03-11T13:30:44+00:00"
         },
         {
             "name": "cenobitedk/wp-env-heroku-jawsdb",
