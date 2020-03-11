@@ -47,7 +47,7 @@
     "ext-exif": "*",
     "ext-gd": "*",
     "ext-mbstring": "*",
-    "cenobitedk/ktdf-theme": "^2.2.0",
+    "cenobitedk/ktdf-theme": "^2.2.1",
     "cenobitedk/wp-env-heroku-jawsdb": "^1.0",
     "cenobitedk/wp-env-ilab-aws": "^1.1",
     "composer/installers": "^1.8",
